@@ -8,12 +8,15 @@ submodules:
 submodules-update: submodules
 	git submodule foreach git pull --ff-only origin master
 
-link: $(HOME)/.vimrc $(HOME)/.vim
+link: $(HOME)/.vimrc $(HOME)/.vim $(HOME)/.zshrc
 
 $(HOME)/.vimrc: vim/vimrc
 	ln -s $(CURDIR)/vim/vimrc $@
 
 $(HOME)/.vim: vim
 	ln -s $(CURDIR)/vim $@
+
+$(HOME)/.zshrc: zshrc
+	ln -s $(CURDIR)/zshrc $@
 
 .PHONY: all submodules submodules-update link
