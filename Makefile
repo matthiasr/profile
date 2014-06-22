@@ -5,9 +5,12 @@ submodules:
 	git submodule sync
 	git submodule update
 
-link: ../.vimrc
+link: $(HOME)/.vimrc $(HOME)/.vim
 
-../.vimrc: vimrc
-	ln -s .vim/vimrc ../.vimrc
+$(HOME)/.vimrc: vim/vimrc
+	ln -s $(CURDIR)/vim/vimrc $@
+
+$(HOME)/.vim: vim
+	ln -s $(CURDIR)/vim $@
 
 .PHONY: all submodules link
