@@ -51,3 +51,6 @@ augroup markdown
   au!
   au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
+
+" look for modelines
+set modelines=3
