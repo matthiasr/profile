@@ -54,3 +54,6 @@ augroup END
 
 " look for modelines
 set modelines=3
+
+" more memory for searches/patterns
+set maxmempattern=20480
