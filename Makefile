@@ -10,16 +10,7 @@ submodules-update: submodules
 
 link: $(HOME)/.vimrc $(HOME)/.vim $(HOME)/.zshrc $(HOME)/.i3/config
 
-$(HOME)/.vimrc: vim/vimrc
-	ln -fs $(CURDIR)/vim/vimrc $@
-
-$(HOME)/.vim: vim
-	ln -fs $(CURDIR)/vim $@
-
-$(HOME)/.zshrc: zshrc
-	ln -fs $(CURDIR)/zshrc $@
-
-$(HOME)/.i3/config: i3/config
+$(HOME)/.%: %
 	mkdir -p $(dir $@)
 	ln -fs $(CURDIR)/$< $@
 
