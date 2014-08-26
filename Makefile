@@ -1,3 +1,12 @@
+MANAGED= \
+				 .vimrc \
+				 .vim		\
+				 .zshrc \
+				 .i3/config \
+				 .ssh/config \
+				 .ssh/profile \
+				 .ssh/authorized_keys
+
 all: submodules link
 
 submodules:
@@ -8,7 +17,7 @@ submodules:
 submodules-update: submodules
 	git submodule foreach git pull --ff-only origin master
 
-link: $(HOME)/.vimrc $(HOME)/.vim $(HOME)/.zshrc $(HOME)/.i3/config
+link: $(MANAGED:%=$(HOME)/%)
 
 $(HOME)/.%: %
 	mkdir -p $(dir $@)
