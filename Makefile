@@ -9,7 +9,7 @@ MANAGED= \
 
 all: submodules link install
 
-submodules:
+submodules: install
 	git submodule init
 	git submodule sync
 	git submodule update

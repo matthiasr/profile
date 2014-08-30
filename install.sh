@@ -20,7 +20,7 @@ install_pkg_linux() {
 install_pkg() {
   case "$(uname)" in
     FreeBSD|DragonFly)
-      pkg install "$@"
+      pkg install -y "$@"
       ;;
     OpenBSD)
       pkg_add "$@"
@@ -51,4 +51,4 @@ then
   fi
 fi
 
-install_pkg sudo vim mosh zsh
+install_pkg sudo vim mosh zsh git
