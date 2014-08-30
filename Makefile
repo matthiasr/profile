@@ -7,7 +7,7 @@ MANAGED= \
 				 .ssh/profile \
 				 .ssh/authorized_keys
 
-all: submodules link
+all: submodules link install
 
 submodules:
 	git submodule init
@@ -19,8 +19,11 @@ submodules-update: submodules
 
 link: $(MANAGED:%=$(HOME)/%)
 
+install:
+	sh ./install.sh
+
 $(HOME)/.%: %
 	mkdir -p $(dir $@)
 	ln -fs $(CURDIR)/$< $@
 
-.PHONY: all submodules submodules-update link
+.PHONY: all submodules submodules-update link install
