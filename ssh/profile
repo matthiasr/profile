@@ -1,4 +1,4 @@
 for s in 2p gr he zz
 do
-  alias $s="ssh $s -t 'tmux attach || tmux'"
+  alias $s="mosh $s -- sh -c 'tmux attach || tmux'"
 done
