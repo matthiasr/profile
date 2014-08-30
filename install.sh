@@ -51,4 +51,4 @@ then
   fi
 fi
 
-install_pkg sudo vim mosh zsh git
+install_pkg "$@"

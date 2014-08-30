@@ -20,7 +20,7 @@ submodules-update: submodules
 link: $(MANAGED:%=$(HOME)/%)
 
 install:
-	sh ./install.sh
+	sh ./install.sh sudo vim zsh mosh git
 
 $(HOME)/.%: %
 	mkdir -p $(dir $@)
