@@ -498,5 +498,6 @@ function start_agent {
 }
 
 [ -r $HOME/.profile ] && source $HOME/.profile
+[ -r ${HOME}/.ssh/profile ] && source ${HOME}/.ssh/profile
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
