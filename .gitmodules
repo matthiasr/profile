@@ -25,3 +25,6 @@
 [submodule "vim/bundle/elixir"]
 	path = vim/bundle/elixir
 	url = git@github.com:elixir-lang/vim-elixir.git
+[submodule "vim/bundle/vim-scala"]
+	path = vim/bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala.git
