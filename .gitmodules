@@ -9,7 +9,7 @@
 	url = git://github.com/airblade/vim-gitgutter.git
 [submodule "vim/bundle/vim-json"]
 	path = vim/bundle/vim-json
-	url = git@github.com:elzr/vim-json.git
+	url = git://github.com/elzr/vim-json.git
 [submodule "vim/bundle/vim-sensible"]
 	path = vim/bundle/vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
@@ -18,13 +18,13 @@
 	url = git://github.com/tpope/vim-surround.git
 [submodule "vim/bundle/eunuch"]
 	path = vim/bundle/eunuch
-	url = git@github.com:tpope/vim-eunuch.git
+	url = git://github.com/tpope/vim-eunuch.git
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = git://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/elixir"]
 	path = vim/bundle/elixir
-	url = git@github.com:elixir-lang/vim-elixir.git
+	url = git://github.com/elixir-lang/vim-elixir.git
 [submodule "vim/bundle/vim-scala"]
 	path = vim/bundle/vim-scala
-	url = git@github.com:derekwyatt/vim-scala.git
+	url = git://github.com/derekwyatt/vim-scala.git
