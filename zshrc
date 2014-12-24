@@ -130,7 +130,7 @@ done
 # XXX set up PATH first?
 if [[ $TERM == dumb ]]; then
   export EDITOR=ed
-elif vim --help 2>&1 >/dev/null; then
+elif which vim 2>&1 >/dev/null; then
   export EDITOR=vim
 else
   export EDITOR=vi
