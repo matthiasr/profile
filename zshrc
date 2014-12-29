@@ -277,6 +277,11 @@ fi
 
 alias ...='cd ../../'
 
+if which ack-grep 2>&1 >/dev/null
+then
+  alias ack=ack-grep
+fi
+
 # allow one error for every three characters typed in approximate completer
 zstyle ':completion:*:approximate:'    max-errors 'reply=( $((($#PREFIX+$#SUFFIX)/3 )) numeric )'
 
