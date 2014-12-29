@@ -34,3 +34,6 @@
 [submodule "vim/bundle/vim-armasm"]
 	path = vim/bundle/vim-armasm
 	url = git://github.com/alisdair/vim-armasm.git
+[submodule "vim/bundle/vim-unimpaired"]
+	path = vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
