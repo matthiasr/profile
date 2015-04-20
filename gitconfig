@@ -1,0 +1,50 @@
+[user]
+	name = Matthias Rampke
+	email = matthias@rampke.de
+
+[color]
+	ui = auto
+
+[push]
+	default = current
+
+[merge]
+	defaulttoupstream = true
+	tool = gvimdiff2
+
+[branch]
+	autosetuprebase = always
+
+[github]
+	user = matthiasr
+	password = !security find-generic-password -s github -a matthiasr -w
+
+[gist]
+	private = yes
+
+[alias]
+	ff = pull --rebase
+	wdiff = diff --word-diff-regex='[^[:space:],]+'
+  standup   = "!f() { git log --since=$1.days --author='Matthias Rampke' --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(green)(%an, %ar)%Creset' --all; }; f"
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  praise = blame
+  co = checkout
+  cb = checkout -b
+  cm = checkout master
+  sm = submodule update --init --recursive
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+
+[core]
+	excludesfile = ~/.cvsignore
+
+[diff]
+	algorithm = patience
+
+[include]
+  path = .gitconfig.local
