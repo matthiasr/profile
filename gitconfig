@@ -33,6 +33,7 @@
   cb = checkout -b
   cm = checkout master
   sm = submodule update --init --recursive
+  rev = rev-parse --short HEAD
 
 [color]
   branch = auto
