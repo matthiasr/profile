@@ -59,3 +59,6 @@ set background=dark
 
 " more memory for searches/patterns
 set maxmempattern=20480
+
+" disable auto-format on save for Go
+let g:go_fmt_autosave = 0
