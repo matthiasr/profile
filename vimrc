@@ -56,6 +56,7 @@ augroup END
 set modelines=3
 
 set background=dark
+colorscheme elflord
 
 " more memory for searches/patterns
 set maxmempattern=20480
