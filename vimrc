@@ -62,4 +62,4 @@ colorscheme elflord
 set maxmempattern=20480
 
 " disable auto-format on save for Go
-let g:go_fmt_autosave = 0
+"let g:go_fmt_autosave = 0
