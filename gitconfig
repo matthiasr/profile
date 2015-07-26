@@ -43,7 +43,7 @@
   status = auto
 
 [core]
-	excludesfile = ~/.cvsignore
+	excludesfile = ~/.gitignore
 
 [diff]
 	algorithm = patience
