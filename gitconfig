@@ -24,7 +24,7 @@
 
 [alias]
 	ff = pull --rebase
-	wdiff = diff --word-diff-regex='[^[:space:],]+'
+  wdiff = diff --word-diff-regex='[[:alnum:]]+'
 	cdiff = diff --word-diff-regex='.'
   standup   = "!f() { git log --since=$1.days --author='Matthias Rampke' --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(green)(%an, %ar)%Creset' --all; }; f"
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
