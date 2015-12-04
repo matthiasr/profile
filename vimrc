@@ -47,10 +47,10 @@ highlight ExtraWhitespace ctermfg=15 ctermbg=4 guifg=#CF6A4C guibg=#420E09
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 " GitHub flavored Markdown
-augroup markdown
-  au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
+" augroup markdown
+"   au!
+"   au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+" augroup END
 
 " look for modelines
 set modelines=3
@@ -63,3 +63,6 @@ set maxmempattern=20480
 
 " disable auto-format on save for Go
 "let g:go_fmt_autosave = 0
+
+" Expand folds by default
+set foldlevel=99
