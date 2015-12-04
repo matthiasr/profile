@@ -35,6 +35,8 @@
   cm = checkout master
   sm = submodule update --init --recursive
   rev = rev-parse --short HEAD
+  s = status
+  c = commit
 
 [color]
   branch = auto
