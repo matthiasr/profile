@@ -3,7 +3,6 @@ MANAGED= \
 				 .gitignore \
 				 .vimrc \
 				 .vim		\
-				 .nvim  \
 				 .zshrc \
 				 .i3/config \
 				 .ssh/config \
