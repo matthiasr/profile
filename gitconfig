@@ -37,6 +37,11 @@
   rev = rev-parse --short HEAD
   s = status
   c = commit
+  ca = commit --amend
+  d = diff
+  dc = diff --cached
+  p = push
+  pf = push -f
 
 [color]
   branch = auto
