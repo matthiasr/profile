@@ -2,6 +2,7 @@ Host *
   Protocol 2
   ServerAliveInterval 15
   ServerAliveCountMax 3
+  UseRoaming no
 
 Host tu
   HostName sshgate.tu-berlin.de
