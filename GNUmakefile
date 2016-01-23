@@ -1,4 +1,5 @@
 MANAGED= \
+				 bin/vimer \
 				 .gitconfig \
 				 .gitignore \
 				 .vimrc \
@@ -24,7 +25,7 @@ link: $(MANAGED:%=$(HOME)/%)
 install:
 	sh ./install.sh sudo vim zsh mosh git
 
-$(HOME)/.%: %
+$(HOME)/.% $(HOME)/%: %
 	mkdir -p $(dir $@)
 	ln -fs $(CURDIR)/$< $@
 
