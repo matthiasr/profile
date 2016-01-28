@@ -66,3 +66,7 @@ set maxmempattern=20480
 
 " Expand folds by default
 set foldlevel=99
+
+" More shell-like tab completion
+set wildmode=longest,list,full
+set wildmenu
