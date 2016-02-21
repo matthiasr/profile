@@ -496,4 +496,10 @@ function zurl() {
 [ -r $HOME/.profile ] && source $HOME/.profile
 [ -r ${HOME}/.ssh/profile ] && source ${HOME}/.ssh/profile
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+for p in "${HOME}/bin" "${HOME}/go/bin" "${HOME}/.rvm/bin"
+do
+  if [ -d "${p}" ]
+  then
+    export PATH="${p}:${PATH}"
+  fi
+done
