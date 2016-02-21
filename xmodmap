@@ -1,0 +1,5 @@
+!
+!!  Use Caps_Lock as Mode_switch key
+!!
+clear lock
+keysym Caps_Lock = ISO_Level3_Shift

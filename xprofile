@@ -1,1 +1,2 @@
 export $(gnome-keyring-daemon -s)
+xmodmap ~/.xmodmap
