@@ -6,6 +6,7 @@ MANAGED= \
 				 .vim		\
 				 .xmodmap \
 				 .xprofile \
+				 .Xresources \
 				 .zshrc \
 				 .i3/config \
 				 .ssh/config \
