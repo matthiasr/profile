@@ -143,6 +143,7 @@ bar {
 
 exec --no-startup-id nm-applet
 exec --no-startup-id xautolock -time 10
+exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 
 # launch a browser
 bindsym $mod+b exec x-www-browser

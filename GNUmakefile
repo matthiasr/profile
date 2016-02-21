@@ -4,6 +4,7 @@ MANAGED= \
 				 .gitignore \
 				 .vimrc \
 				 .vim		\
+				 .xprofile \
 				 .zshrc \
 				 .i3/config \
 				 .ssh/config \
