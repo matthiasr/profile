@@ -503,3 +503,25 @@ do
     export PATH="${p}:${PATH}"
   fi
 done
+
+
+# cd to repository; clone or make if necessary
+function gogo {
+	if [ -z "$GOPATH" ]; then
+		echo "GOPATH not set" >&2
+    return 1
+	fi
+
+	local repository="${1}"
+	local url="git@github.com:$repository.git"
+	local src="$GOPATH/src/github.com/$repository"
+
+	if [ ! -d "$src" ]; then
+		git clone "$url" "$src" || return 2
+  fi
+  cd $src
+}
+function _gogo {
+  _path_files -W $GOPATH/src/github.com
+}
+compdef _gogo gogo
