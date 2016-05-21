@@ -213,7 +213,6 @@ compinit
 autoload zed
 
 zmodload -i zsh/complist
-zmodload -i zsh/mathfunc
 
 #k# menu selection: pick item but stay in the menu
 bindkey -M menuselect '\e^M' accept-and-menu-complete
