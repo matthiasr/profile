@@ -503,14 +503,13 @@ do
   fi
 done
 
+if [ -z "$GOPATH" ]; then
+  export GOPATH="${HOME}"
+fi
+
 
 # cd to repository; clone or make if necessary
 function gogo {
-	if [ -z "$GOPATH" ]; then
-		echo "GOPATH not set" >&2
-    return 1
-	fi
-
 	local repository="${1}"
 	local url="git@github.com:$repository.git"
 	local src="$GOPATH/src/github.com/$repository"
