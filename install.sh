@@ -9,7 +9,7 @@ install_pkg_unknown() {
 
 # "Linux" can be a number of things, treat this specially
 install_pkg_linux() {
-  if [ -f /etc/debian_version ]
+  if [ -f /etc/debian_version -o "${HOME}" = "/data/data/com.termux/files/home" ]
   then
     apt-get install --yes "$@"
   else
@@ -38,7 +38,7 @@ install_pkg() {
 }
 
 # Self-rootify
-if [ "${USER}" != "root" ]
+if [ "${USER}" != "root" -a "${HOME}" != "/data/data/com.termux/files/home" ]
 then
   if which sudo 2>&1 >/dev/null
   then
