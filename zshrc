@@ -523,3 +523,8 @@ function _gogo {
   _path_files -W $GOPATH/src/github.com
 }
 compdef _gogo gogo
+
+# poor man's ack: search the local directory for a fixed string
+ack() {
+  grep -FR "$*" .
+}
