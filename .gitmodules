@@ -40,9 +40,6 @@
 [submodule "vim/bundle/vim-elixir"]
 	path = vim/bundle/vim-elixir
 	url = git@github.com:elixir-lang/vim-elixir.git
-[submodule "bin-src/vimer"]
-	path = bin-src/vimer
-	url = git@github.com:susam/vimer.git
 [submodule "vim/bundle/vim-repeat"]
 	path = vim/bundle/vim-repeat
 	url = git@github.com:tpope/vim-repeat.git
