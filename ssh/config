@@ -43,3 +43,8 @@ Host he
   CheckHostIP yes
   hostname he.2pktfkt.net
   user mr
+
+host *.dev.s-cloud.net
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  LogLevel quiet
