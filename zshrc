@@ -508,7 +508,7 @@ if [ -z "$GOPATH" ]; then
 fi
 
 
-# cd to repository; clone or make if necessary
+# cd to repository; try to clone if not found.
 function gogo {
 	local repository="${1}"
 	local url="git@github.com:$repository.git"
