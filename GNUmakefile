@@ -1,5 +1,4 @@
 MANAGED= \
-				 bin/vimer \
 				 .gitconfig \
 				 .gitignore \
 				 .vimrc \
