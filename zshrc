@@ -528,3 +528,9 @@ compdef _gogo gogo
 ack() {
   grep -FR "$*" .
 }
+
+# If there is no ssh-agent, start one.
+# TODO: reattach to existing session?
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval $(ssh-agent -s 2> /dev/null)
+fi
