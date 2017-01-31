@@ -190,7 +190,8 @@ if [[ "$TERM" != emacs ]] ; then
     [[ "$terminfo[kend]"  == $'\eO'* ]] && bindkey -M viins "${terminfo[kend]/O/[}"  end-of-line
     [[ "$terminfo[khome]" == $'\eO'* ]] && bindkey -M emacs "${terminfo[khome]/O/[}" beginning-of-line
     [[ "$terminfo[kend]"  == $'\eO'* ]] && bindkey -M emacs "${terminfo[kend]/O/[}"  end-of-line
-    bindkey "^R" history-incremental-search-backward
+    bindkey -M viins "^R" history-incremental-search-backward
+    bindkey -M vicmd "^R" history-incremental-search-backward
 fi
 
 #m# k Shift-tab Perform backwards menu completion
