@@ -70,3 +70,6 @@ set foldlevel=99
 " More shell-like tab completion
 set wildmode=longest,list,full
 set wildmenu
+
+" do not create double spaces when joining lines
+set nojoinspaces
