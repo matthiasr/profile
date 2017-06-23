@@ -527,7 +527,7 @@ compdef _gogo gogo
 
 # poor man's ack: search the local directory for a fixed string
 ack() {
-  grep -FR "$*" .
+  grep -FRi "$*" .
 }
 
 # If there is no ssh-agent, start one.
