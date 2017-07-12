@@ -15,10 +15,6 @@
 [branch]
 	autosetuprebase = always
 
-[github]
-	user = matthiasr
-	password = !security find-generic-password -s github -a matthiasr -w
-
 [gist]
 	private = yes
 
@@ -61,8 +57,6 @@
 
 [include]
   path = .gitconfig.local
-[url "git@github.com:"]
-	insteadOf = https://github.com/
 
 [transfer]
   fsckobjects = true
@@ -70,3 +64,5 @@
   fsckobjects = true
 [receive]
   fsckObjects = true
+[credential]
+	helper = osxkeychain
