@@ -1,2 +1,2 @@
-fish_vi_key_bindings
+fish_hybrid_key_bindings
 set CDPATH . ~/src/github.com/
