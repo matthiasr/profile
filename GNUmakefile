@@ -10,7 +10,8 @@ MANAGED= \
 				 .i3/config \
 				 .ssh/config \
 				 .ssh/profile \
-				 .ssh/authorized_keys
+				 .ssh/authorized_keys \
+				 .config/fish
 
 all: submodules link install
 
