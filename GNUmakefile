@@ -13,9 +13,9 @@ MANAGED= \
 				 .ssh/authorized_keys \
 				 .config/fish
 
-all: submodules link install
+all: submodules link
 
-submodules: install
+submodules:
 	git submodule init
 	git submodule sync
 	git submodule update
@@ -25,11 +25,8 @@ submodules-update: submodules
 
 link: $(MANAGED:%=$(HOME)/%)
 
-install:
-	sh ./install.sh vim zsh mosh git
-
 $(HOME)/.% $(HOME)/%: %
 	mkdir -p $(dir $@)
 	ln -fs $(CURDIR)/$< $@
 
-.PHONY: all submodules submodules-update link install
+.PHONY: all submodules submodules-update link
