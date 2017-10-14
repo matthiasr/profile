@@ -38,6 +38,7 @@
   dc = diff --cached
   p = push
   pf = push -f
+	git = !exec git
 
 [color]
   branch = auto
