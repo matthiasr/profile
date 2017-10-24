@@ -39,6 +39,7 @@
   p = push
   pf = push -f
 	git = !exec git
+	l = log --graph --decorate --pretty=oneline --abbrev-commit --all --color
 
 [color]
   branch = auto
