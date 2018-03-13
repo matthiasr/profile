@@ -32,8 +32,8 @@
   sm = submodule update --init --recursive
   rev = rev-parse --short HEAD
   s = status
-  c = commit
-  ca = commit --amend
+  c = commit --signoff
+  ca = commit --amend --signoff
   d = diff
   dc = diff --cached
   p = push
