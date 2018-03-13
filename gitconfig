@@ -37,7 +37,7 @@
   d = diff
   dc = diff --cached
   p = push
-  pf = push -f
+  pf = push --force-with-lease
 	git = !exec git
 	l = log --graph --decorate --pretty=oneline --abbrev-commit --all --color
 
