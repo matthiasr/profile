@@ -20,32 +20,32 @@
 
 [alias]
 	ff = pull --rebase
-  wdiff = diff --word-diff-regex='[[:alnum:]]+'
+	wdiff = diff --word-diff-regex='[[:alnum:]]+'
 	cdiff = diff --word-diff-regex='.'
-  standup   = "!f() { git log --since=$1.days --author='Matthias Rampke' --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(green)(%an, %ar)%Creset' --all; }; f"
-  lol = log --graph --decorate --pretty=oneline --abbrev-commit
-  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  praise = blame
-  co = checkout
-  cb = checkout -b
-  cm = checkout master
-  sm = submodule update --init --recursive
-  rev = rev-parse --short HEAD
-  s = status
-  c = commit --signoff
-  ca = commit --amend --signoff
-  d = diff
-  dc = diff --cached
-  p = push
-  pf = push --force-with-lease
+	standup   = "!f() { git log --since=$1.days --author='Matthias Rampke' --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(green)(%an, %ar)%Creset' --all; }; f"
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	praise = blame
+	co = checkout
+	cb = checkout -b
+	cm = checkout master
+	sm = submodule update --init --recursive
+	rev = rev-parse --short HEAD
+	s = status
+	c = commit --signoff
+	ca = commit --amend --signoff
+	d = diff
+	dc = diff --cached
+	p = push
+	pf = push --force-with-lease
 	git = !exec git
 	l = log --graph --decorate --pretty=oneline --abbrev-commit --all --color
 
 [color]
-  branch = auto
-  diff = auto
-  interactive = auto
-  status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
 
 [core]
 	excludesfile = ~/.gitignore
@@ -59,13 +59,13 @@
 	autostash = true
 
 [include]
-  path = .gitconfig.local
+	path = .gitconfig.local
 
 [transfer]
-  fsckobjects = true
+	fsckobjects = true
 [fetch]
-  fsckobjects = true
+	fsckobjects = true
 [receive]
-  fsckObjects = true
+	fsckObjects = true
 [credential]
 	helper = osxkeychain
