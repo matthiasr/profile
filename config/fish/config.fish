@@ -6,8 +6,8 @@ if test -f ~/.rvm/script/rvm
     rvm default
 end
 
+set fish_user_paths ~/bin ~/go/bin ~/.cargo/bin
 set -x GOPATH $HOME
-set -x PATH ~/bin ~/go/bin ~/.cargo/bin $PATH
 set -x EDITOR vim
 
 if command -v docker-machine > /dev/null
