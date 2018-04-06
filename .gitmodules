@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vim-hclfmt"]
 	path = vim/bundle/vim-hclfmt
 	url = https://github.com/fatih/vim-hclfmt.git
+[submodule "vim/bundle/rust"]
+	path = vim/bundle/rust
+	url = https://github.com/rust-lang/rust.vim.git
