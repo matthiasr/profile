@@ -7,7 +7,7 @@ if test -f ~/.rvm/script/rvm
 end
 
 set -x GOPATH $HOME
-set -x PATH ~/bin ~/.cargo/bin $PATH
+set -x PATH ~/bin ~/go/bin ~/.cargo/bin $PATH
 set -x EDITOR vim
 
 if command -v docker-machine > /dev/null
