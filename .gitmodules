@@ -40,9 +40,6 @@
 [submodule "vim/bundle/vim-godef"]
 	path = vim/bundle/vim-godef
 	url = https://github.com/dgryski/vim-godef.git
-[submodule "vim/bundle/writegood"]
-	path = vim/bundle/writegood
-	url = https://github.com/davidbeckingsale/writegood.vim.git
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
