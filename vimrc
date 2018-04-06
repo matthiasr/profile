@@ -97,3 +97,5 @@ autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 "autocmd FileType go nmap <Leader>i <Plug>(go-info)
 let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
+
+let g:rustfmt_autosave = 1
