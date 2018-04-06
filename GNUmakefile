@@ -5,6 +5,7 @@ MANAGED= \
 				 .vim		\
 				 .xmodmap \
 				 .xprofile \
+				 .xsessionrc \
 				 .Xresources \
 				 .zshrc \
 				 .i3/config \
