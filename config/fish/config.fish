@@ -6,7 +6,11 @@ if test -f ~/.rvm/script/rvm
     rvm default
 end
 
-set fish_user_paths ~/bin ~/go/bin ~/.cargo/bin
+for d in ~/bin ~/go/bin ~/.cargo/bin
+    if test -d $d
+        set fish_user_paths $fish_user_paths $d
+    end
+end
 set -x GOPATH $HOME
 set -x EDITOR vim
 
