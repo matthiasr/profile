@@ -52,9 +52,6 @@
 [submodule "vim/bundle/vim-fish"]
 	path = vim/bundle/vim-fish
 	url = https://github.com/wilriker/vim-fish.git
-[submodule "vim/bundle/vim-hclfmt"]
-	path = vim/bundle/vim-hclfmt
-	url = https://github.com/fatih/vim-hclfmt.git
 [submodule "vim/bundle/rust"]
 	path = vim/bundle/rust
 	url = https://github.com/rust-lang/rust.vim.git

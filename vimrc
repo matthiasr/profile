@@ -99,3 +99,5 @@ let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
 
 let g:rustfmt_autosave = 1
+
+let g:terraform_fmt_on_save = 1
