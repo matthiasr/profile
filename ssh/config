@@ -11,6 +11,7 @@ Host tu
   HostName sshgate.tu-berlin.de
   user matthias.rampke
   GSSAPIDelegateCredentials yes
+  IgnoreUnknown GSSAPIDelegateCredentials
 
 Host rosa
   HostName rosa.physik.tu-berlin.de
