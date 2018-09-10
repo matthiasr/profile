@@ -69,3 +69,5 @@
 	fsckObjects = true
 [credential]
 	helper = osxkeychain
+[http]
+	cookiefile = /Users/mr/.gitcookies
