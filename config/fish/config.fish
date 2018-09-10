@@ -2,7 +2,7 @@ fish_hybrid_key_bindings
 set CDPATH . ~ ~/src/github.com/
 set fish_greeting ""
 
-if test -f ~/.rvm/script/rvm
+if test -f ~/.rvm/scripts/rvm
     rvm default
 end
 
