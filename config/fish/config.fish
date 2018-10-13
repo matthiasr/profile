@@ -17,3 +17,6 @@ set -x EDITOR vim
 if command -v docker-machine > /dev/null
     eval (docker-machine env default --shell fish)
 end
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+
