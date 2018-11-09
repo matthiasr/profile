@@ -11,6 +11,13 @@ for d in ~/bin ~/go/bin ~/.cargo/bin
         set fish_user_paths $fish_user_paths $d
     end
 end
+
+ssh-add -L >/dev/null 2>/dev/null
+if [ $status -eq 2 ]
+  pkill -u (whoami) ssh-agent
+  eval (ssh-agent -c)
+end
+
 set -x GOPATH $HOME
 set -x EDITOR vim
 
