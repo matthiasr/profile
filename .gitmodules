@@ -55,6 +55,3 @@
 [submodule "vim/bundle/rust"]
 	path = vim/bundle/rust
 	url = https://github.com/rust-lang/rust.vim.git
-[submodule "vim/bundle/vim-tradewinds"]
-	path = vim/bundle/vim-tradewinds
-	url = git@github.com:andymass/vim-tradewinds
