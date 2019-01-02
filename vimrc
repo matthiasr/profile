@@ -101,3 +101,13 @@ let g:go_auto_sameids = 1
 let g:rustfmt_autosave = 1
 
 let g:terraform_fmt_on_save = 1
+
+" https://github.com/vim-syntastic/syntastic#3-recommended-settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
