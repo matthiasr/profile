@@ -36,7 +36,7 @@
 	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "vim/bundle/vim-repeat"]
 	path = vim/bundle/vim-repeat
-	url = git@github.com:tpope/vim-repeat.git
+	url = https://github.com/tpope/vim-repeat.git
 [submodule "vim/bundle/vim-godef"]
 	path = vim/bundle/vim-godef
 	url = https://github.com/dgryski/vim-godef.git
