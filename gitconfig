@@ -19,7 +19,7 @@
 	private = yes
 
 [alias]
-	ff = pull --rebase
+	ff = pull --rebase --prune
 	wdiff = diff --word-diff-regex='[[:alnum:]]+'
 	cdiff = diff --word-diff-regex='.'
 	standup   = "!f() { git log --since=$1.days --author='Matthias Rampke' --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(green)(%an, %ar)%Creset' --all; }; f"
