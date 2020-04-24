@@ -22,7 +22,6 @@ if [ $status -eq 2 ]
   eval (ssh-agent -c)
 end
 
-set -x GOPATH $HOME
 set -x EDITOR vim
 
 if command -v docker-machine > /dev/null
