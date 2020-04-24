@@ -6,6 +6,10 @@ if test -f ~/.rvm/scripts/rvm
     rvm default
 end
 
+if test -f ~/.config/fish/local.fish
+    source ~/.config/fish/local.fish
+end
+
 for d in ~/bin ~/go/bin ~/.cargo/bin
     if test -d $d
         set fish_user_paths $fish_user_paths $d

@@ -9,3 +9,4 @@
 .bash_history
 .cache
 tmp/
+/config/fish/local.fish
