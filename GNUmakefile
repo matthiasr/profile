@@ -1,6 +1,7 @@
 MANAGED= \
 				 .gitconfig \
 				 .gitignore \
+				 .config/git \
 				 .vimrc \
 				 .vim		\
 				 .xmodmap \
@@ -12,7 +13,7 @@ MANAGED= \
 				 .ssh/config \
 				 .ssh/profile \
 				 .ssh/authorized_keys \
-				 .config/fish
+				 .config/fish \
 
 all: submodules link
 

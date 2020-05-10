@@ -1,12 +1,20 @@
 [user]
 	name = Matthias Rampke
 	email = matthias@rampke.de
+  signingkey = F46A5FAA9508311DDBCC403A9A7D111CAE60D44B
+
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
 
 [color]
 	ui = auto
 
 [push]
 	default = current
+
+[commit]
+  gpgsign = true
 
 [merge]
 	defaulttoupstream = true
@@ -47,10 +55,6 @@
 	interactive = auto
 	status = auto
 
-[core]
-	excludesfile = ~/.gitignore
-	editor = vim
-
 [diff]
 	algorithm = patience
 
@@ -58,16 +62,24 @@
 	autosquash = true
 	autostash = true
 
-[include]
-	path = .gitconfig.local
-
 [transfer]
 	fsckobjects = true
 [fetch]
 	fsckobjects = true
 [receive]
 	fsckObjects = true
+
 [credential]
 	helper = osxkeychain
+
 [http]
-	cookiefile = /Users/mr/.gitcookies
+	cookiefile = ~/.gitcookies
+
+[includeIf "gitdir:~/src/github.com/prometheus/"]
+  path = .config/git/prometheus
+
+[includeIf "gitdir:~/src/github.com/soundcloud/"]
+  path = .config/git/soundcloud
+
+[include]
+	path = .config/git/local

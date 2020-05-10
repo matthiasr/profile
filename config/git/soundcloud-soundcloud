@@ -1,0 +1,6 @@
+[transfer]
+  fsckobjects = false
+[fetch]
+  fsckobjects = false
+[receive]
+  fsckObjects = false
