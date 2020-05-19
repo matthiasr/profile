@@ -10,3 +10,4 @@
 .cache
 tmp/
 /config/fish/local.fish
+.vscode/
