@@ -2,10 +2,6 @@ fish_hybrid_key_bindings
 set CDPATH . ~ ~/src/github.com/
 set fish_greeting ""
 
-if test -f ~/.rvm/scripts/rvm
-    rvm default
-end
-
 if test -f ~/.config/fish/local.fish
     source ~/.config/fish/local.fish
 end
