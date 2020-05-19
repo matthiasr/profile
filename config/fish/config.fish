@@ -29,3 +29,6 @@ test -x (which aws_completer); and complete --command aws --no-files --arguments
 function save_history --on-event fish_preexec
     history --save
 end
+
+# rbenv
+status --is-interactive; and type -q rbenv; and source (rbenv init -|psub)
