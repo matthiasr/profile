@@ -39,3 +39,6 @@ and source (rbenv init -|psub)
 status --is-interactive
 and type -q pyenv
 and source (pyenv init -|psub)
+
+# load full SDK config (mostly for Terraform < 0.13)
+set -x AWS_SDK_LOAD_CONFIG 1
