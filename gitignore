@@ -11,3 +11,6 @@
 tmp/
 /config/fish/local.fish
 .vscode/
+.settings/
+.project
+.classpath
