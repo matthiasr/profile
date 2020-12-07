@@ -48,7 +48,7 @@
 	pf = push --force-with-lease
 	git = !exec git
 	l = log --graph --decorate --pretty=oneline --abbrev-commit --all --color
-	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(HEAD)%(refname:short)%09%(color:yellow)%(contents:subject)' refs/heads
 
 
 [color]
