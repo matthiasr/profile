@@ -14,6 +14,8 @@ MANAGED= \
 				 .ssh/profile \
 				 .ssh/authorized_keys \
 				 .config/fish \
+				 .terraformrc \
+				 .terraform.d/plugin-cache/.placeholder \
 
 all: submodules link
 
@@ -25,10 +27,10 @@ submodules:
 submodules-update: submodules
 	git submodule foreach git pull --ff-only origin master
 
-link: $(MANAGED:%=$(HOME)/%)
+link: $(MANAGED:%=$(HOME)/%) directories
 
 $(HOME)/.% $(HOME)/%: %
 	mkdir -p $(dir $@)
 	ln -fs $(CURDIR)/$< $@
 
-.PHONY: all submodules submodules-update link
+.PHONY: all submodules submodules-update link directories
