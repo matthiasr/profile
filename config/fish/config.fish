@@ -32,6 +32,9 @@ function save_history --on-event fish_preexec
     history --save
 end
 
+test -x /usr/libexec/java_home
+and set -x JAVA_HOME (/usr/libexec/java_home)
+
 # rbenv & pyenv
 status --is-interactive
 and type -q rbenv
