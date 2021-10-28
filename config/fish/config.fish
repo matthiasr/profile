@@ -36,12 +36,12 @@ test -x /usr/libexec/java_home
 and set -x JAVA_HOME (/usr/libexec/java_home)
 
 # rbenv & pyenv
-status --is-interactive
+status is-login
 and type -q rbenv
 and source (rbenv init -|psub)
-status --is-interactive
-and type -q pyenv
-and source (pyenv init -|psub)
+
+status is-login; and pyenv init --path | source
+pyenv init - | source
 
 # load full SDK config (mostly for Terraform < 0.13)
 set -x AWS_SDK_LOAD_CONFIG 1
