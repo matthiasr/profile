@@ -1,3 +1,4 @@
 .netrwhist
 config/git/local
 config/fish/completions/sc.fish
+/config/fish/conf.d/sc-tools.fish
