@@ -80,6 +80,9 @@
 [includeIf "gitdir:~/src/github.com/prometheus/"]
   path = .config/git/prometheus
 
+[includeIf "gitdir:~/src/github.com/cncf/"]
+  path = .config/git/prometheus
+
 [includeIf "gitdir:~/src/github.com/soundcloud/"]
   path = .config/git/soundcloud
 
