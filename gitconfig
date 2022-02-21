@@ -86,5 +86,11 @@
 [includeIf "gitdir:~/src/github.com/soundcloud/"]
   path = .config/git/soundcloud
 
+[includeIf "gitdir:~/src/github.com/kubernetes/"]
+  path = .config/git/soundcloud
+
+[includeIf "gitdir:~/src/github.com/vitessio/"]
+  path = .config/git/soundcloud
+
 [include]
 	path = .config/git/local
