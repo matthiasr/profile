@@ -40,8 +40,10 @@ status is-login
 and type -q rbenv
 and source (rbenv init -|psub)
 
-status is-login; and pyenv init --path | source
-pyenv init - | source
+status is-login
+and type -q pyenv
+and pyenv init --path | source
+and pyenv init - | source
 
 # load full SDK config (mostly for Terraform < 0.13)
 set -x AWS_SDK_LOAD_CONFIG 1
