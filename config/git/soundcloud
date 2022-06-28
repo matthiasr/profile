@@ -6,7 +6,7 @@
 	insteadOf = git+ssh://git.debian.org/git/d-i/
 
 [diff "shibboleth"]
-	textconv = /Users/mr/src/github.com/matthiasr/shibboleth-git/shibboleth-show.sh
+	textconv = /Users/mr/src/github.com/soundcloud/shibboleth-git/shibboleth-show.sh
 
 [includeIf "gitdir:~/src/github.com/soundcloud/soundcloud/"]
   path = soundcloud-soundcloud
