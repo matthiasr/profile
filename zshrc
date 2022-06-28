@@ -540,3 +540,8 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin"
 
 [ -d "$HOME/.sc-tools" ] && source "$HOME/.sc-tools/dotfiles/env.zsh" #sc-tools-setup
+
+if brew list asdf >/dev/null
+then
+    . $(brew --prefix asdf)/libexec/asdf.sh
+fi
