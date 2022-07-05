@@ -6,6 +6,8 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
+	fsmonitor = true
+	untrackedcache = true
 
 [color]
 	ui = auto
