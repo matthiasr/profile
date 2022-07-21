@@ -4,7 +4,6 @@
   signingkey = F46A5FAA9508311DDBCC403A9A7D111CAE60D44B
 
 [core]
-	excludesfile = ~/.gitignore
 	editor = vim
 	fsmonitor = true
 	untrackedcache = true
