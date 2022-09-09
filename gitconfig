@@ -1,7 +1,16 @@
 [user]
 	name = Matthias Rampke
 	email = matthias@rampke.de
-  signingkey = F46A5FAA9508311DDBCC403A9A7D111CAE60D44B
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPGHRHZTONah1I2Rd4gA6oHil90pRI7Lq3JeWmcM6VfO
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
 
 [core]
 	editor = vim
@@ -13,9 +22,6 @@
 
 [push]
 	default = current
-
-[commit]
-  gpgsign = true
 
 [merge]
 	defaulttoupstream = true
