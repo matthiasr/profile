@@ -96,3 +96,6 @@
 
 [include]
 	path = .config/git/local
+
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
