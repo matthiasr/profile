@@ -47,3 +47,6 @@ and pyenv init - | source
 
 # load full SDK config (mostly for Terraform < 0.13)
 set -x AWS_SDK_LOAD_CONFIG 1
+
+# Make sure GPG can ask for a passphrase
+set -x GPG_TTY (tty)
