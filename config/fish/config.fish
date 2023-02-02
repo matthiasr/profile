@@ -12,12 +12,6 @@ for d in ~/bin ~/go/bin ~/.cargo/bin /usr/local/go/bin
     end
 end
 
-ssh-add -L >/dev/null 2>/dev/null
-if [ $status -eq 2 ]
-    pkill -u (whoami) ssh-agent
-    eval (ssh-agent -c)
-end
-
 set -x EDITOR vim
 
 test -e {$HOME}/.iterm2_shell_integration.fish
