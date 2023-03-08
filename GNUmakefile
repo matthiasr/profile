@@ -12,6 +12,7 @@ MANAGED= \
 				 .zgen-setup \
 				 .zsh_aliases \
 				 .zsh_functions \
+				 .zshrc.d \
 				 .i3/config \
 				 .ssh/config \
 				 .ssh/profile \
