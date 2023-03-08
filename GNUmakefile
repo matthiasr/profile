@@ -9,6 +9,9 @@ MANAGED= \
 				 .xsessionrc \
 				 .Xresources \
 				 .zshrc \
+				 .zgen-setup \
+				 .zsh_aliases \
+				 .zsh_functions \
 				 .i3/config \
 				 .ssh/config \
 				 .ssh/profile \
