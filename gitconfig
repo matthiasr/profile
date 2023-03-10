@@ -85,14 +85,8 @@
 [includeIf "gitdir:~/src/github.com/cncf/"]
   path = .config/git/prometheus
 
-[includeIf "gitdir:~/src/github.com/soundcloud/"]
-  path = .config/git/soundcloud
-
-[includeIf "gitdir:~/src/github.com/kubernetes/"]
-  path = .config/git/soundcloud
-
-[includeIf "gitdir:~/src/github.com/vitessio/"]
-  path = .config/git/soundcloud
+[includeIf "gitdir:~/src/github.com/chronosphereio/"]
+  path = .config/git/chronosphereio
 
 [include]
 	path = .config/git/local
