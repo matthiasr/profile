@@ -56,7 +56,6 @@ match ExtraWhitespace /\s\+$\| \+\ze\t/
 set modelines=3
 
 set background=dark
-colorscheme solarized
 
 " more memory for searches/patterns
 set maxmempattern=20480
