@@ -39,8 +39,6 @@
 	sm = submodule update --init --recursive
 	rev = rev-parse --short HEAD
 	s = status
-	c = commit --signoff
-	ca = commit --amend --signoff
 	d = diff
 	dc = diff --cached
 	p = push
@@ -48,6 +46,10 @@
 	git = !exec git
 	l = log --graph --decorate --pretty=oneline --abbrev-commit --all --color
 	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(HEAD)%(refname:short)%09%(color:yellow)%(contents:subject)' refs/heads
+
+	# override these to include --signoff in more specific configurations for projects where DCO is required
+	c = commit
+	ca = commit --amend
 
 
 [color]

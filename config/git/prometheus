@@ -1,2 +1,7 @@
 [user]
 	email = matthias@prometheus.io
+
+[alias]
+	# Prometheus requires the DCO sign-off
+	c = commit --signoff
+	ca = commit --amend --signoff
