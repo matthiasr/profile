@@ -3,3 +3,4 @@ config/git/local
 config/fish/completions/sc.fish
 /config/fish/conf.d/sc-tools.fish
 /zshrc.d/monorepo.sh
+/config/git/hooks
