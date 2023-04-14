@@ -8,10 +8,11 @@ MANAGED= \
 				 .xprofile \
 				 .xsessionrc \
 				 .Xresources \
-				 .zshrc \
 				 .zgen-setup \
 				 .zsh_aliases \
 				 .zsh_functions \
+				 .zsh-quickstart-local-plugins \
+				 .zshrc \
 				 .zshrc.d \
 				 .i3/config \
 				 .ssh/config \
