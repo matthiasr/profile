@@ -1,6 +1,5 @@
 MANAGED= \
 				 .gitconfig \
-				 .gitignore \
 				 .config/git \
 				 .vimrc \
 				 .vim		\
