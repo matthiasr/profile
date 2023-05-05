@@ -16,3 +16,4 @@ tmp/
 .classpath
 .metals/
 .tool-versions
+tf.plan
